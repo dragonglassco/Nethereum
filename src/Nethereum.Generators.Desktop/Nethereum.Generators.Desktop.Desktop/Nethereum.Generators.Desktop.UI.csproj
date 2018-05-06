@@ -5,6 +5,10 @@
     <TargetFramework>net461</TargetFramework>
   </PropertyGroup>
 	
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+	
   <ItemGroup>
     <ProjectReference Include="..\Nethereum.Generators.Desktop\Nethereum.Generators.Desktop.csproj" />
   </ItemGroup>

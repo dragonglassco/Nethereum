@@ -6,6 +6,10 @@
     <PackageId>Nethereum.Uport.IntegrationTests</PackageId>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\Nethereum.Uport\Nethereum.Uport.csproj" />
   </ItemGroup>

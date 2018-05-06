@@ -8,6 +8,10 @@
     <PackageId>Nethereum.ENS.UnitTests</PackageId>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+
   <ItemGroup>
      <ProjectReference Include="..\Nethereum.ENS\Nethereum.ENS.csproj" />
   </ItemGroup>

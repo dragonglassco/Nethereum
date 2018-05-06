@@ -42,8 +42,8 @@ namespace Nethereum.Signer
 
         public byte[] V
         {
-            get => ECDSASignature.V;
-            set => ECDSASignature.V = value;
+            get { return ECDSASignature.V; }
+            set { ECDSASignature.V = value; }
         }
 
         public bool IsLowS => ECDSASignature.IsLowS;

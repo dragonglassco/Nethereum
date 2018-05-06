@@ -41,7 +41,7 @@ namespace Nethereum.Contracts
 
         public BlockParameter DefaultBlock
         {
-            get => defaultBlock;
+            get { return defaultBlock; }
             set
             {
                 defaultBlock = value;

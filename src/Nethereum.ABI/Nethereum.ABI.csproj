@@ -10,6 +10,9 @@
     <AssemblyName>Nethereum.ABI</AssemblyName>
     <PackageId>Nethereum.ABI</PackageId>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard1.1|AnyCPU'">
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Nethereum.Hex\Nethereum.Hex.csproj" />

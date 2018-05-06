@@ -30,14 +30,14 @@ namespace Nethereum.Hex.HexTypes
 
         public string HexValue
         {
-            get => hexValue;
-            set => InitialiseFromHex(value);
+            get { return hexValue; }
+            set { InitialiseFromHex(value); }
         }
 
         public T Value
         {
-            get => value;
-            set => InitialiseFromValue(value);
+            get { return value; }
+            set { InitialiseFromValue(value); }
         }
 
         protected void InitialiseFromHex(string newHexValue)

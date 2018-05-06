@@ -21,7 +21,9 @@ namespace Nethereum.Web3.Accounts
         public AccountSignerTransactionManager(IClient rpcClient, Account account, BigInteger? chainId = null)
         {
             ChainId = chainId;
-            Account = account ?? throw new ArgumentNullException(nameof(account));
+            if(account == null)
+                throw new ArgumentNullException(nameof(account));
+            Account = account;
             Client = rpcClient;
             _transactionSigner = new TransactionSigner();
         }

@@ -10,6 +10,9 @@
     <PackageId>Nethereum.Geth</PackageId>
     <PackageTags>Netherum;Ethereum;Blockchain;Geth</PackageTags>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard1.1|AnyCPU'">
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Nethereum.RPC\Nethereum.RPC.csproj" />
     <ProjectReference Include="..\Nethereum.Web3\Nethereum.Web3.csproj" />

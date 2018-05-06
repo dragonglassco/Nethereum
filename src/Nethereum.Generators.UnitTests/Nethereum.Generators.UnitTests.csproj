@@ -6,6 +6,10 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+
   <ItemGroup>
     <None Remove="Expected\Content\CSharp\ContractDeploymentCqsMessage.01.csharp.txt" />
     <None Remove="Expected\Content\CSharp\EventDTO.01.csharp.txt" />

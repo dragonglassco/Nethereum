@@ -9,6 +9,10 @@
     <PackageId>Nethereum.Quorum.Tests</PackageId>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\Nethereum.Quorum\Nethereum.Quorum.csproj" />
   </ItemGroup>

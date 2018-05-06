@@ -12,6 +12,9 @@
     <PackageTags>Netherum;Uport;Identity;Ethereum;Blockchain;Crypto 2.0</PackageTags>
     <PackageLicenseUrl>https://raw.githubusercontent.com/Nethereum/Nethereum/master/LICENSE.md</PackageLicenseUrl>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard1.1|AnyCPU'">
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Nethereum.Web3\Nethereum.Web3.csproj" />

@@ -42,8 +42,8 @@ namespace Nethereum.Web3
 
         public ITransactionManager TransactionManager
         {
-            get => Eth.TransactionManager;
-            set => Eth.TransactionManager = value;
+            get { return Eth.TransactionManager; }
+            set { Eth.TransactionManager = value; }
         }
 
         public static UnitConversion Convert { get; } = new UnitConversion();

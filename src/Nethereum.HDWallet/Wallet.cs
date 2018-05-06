@@ -37,8 +37,8 @@ namespace Nethereum.HdWallet
 
         private IRandom Random
         {
-            get => RandomUtils.Random;
-            set => RandomUtils.Random = value;
+            get { return RandomUtils.Random; }
+            set { RandomUtils.Random = value; }
         }
 
         public string Seed { get; private set; }
